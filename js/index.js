@@ -5,6 +5,6 @@ let unanimatedObject = document.querySelector('.unanimated_object');
 (
     function animating() {
         unanimatedObject.classList.toggle('animated_object');
-        setTimeout(animating, 6000);
+        setTimeout(animating, 4800);
     }
 )();
