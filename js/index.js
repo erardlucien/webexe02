@@ -15,15 +15,15 @@ function animation() {
     intermediate[1] = setTimeout(() => {
         unanimatedObject.classList.remove('between_state');
         unanimatedObject.classList.add('end_state');
-    }, 2000);
+    }, 4000);
 
     end = setTimeout( () => {
         unanimatedObject.classList.remove('end_state');
         clearTimeout(intermediate[0]);
         clearTimeout(intermediate[1]);
     }
-    , 4000);
+    , 7000);
 }
 
 animation();
-let repeatAnimation = setInterval(animation, 7100);
+let repeatAnimation = setInterval(animation, 9100);
