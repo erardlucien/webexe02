@@ -1,6 +1,6 @@
 'use strict';
 
-let unanimatedObject = document.querySelector('.unanimated_object');
+let unanimatedObject = document.querySelector('.figure');
 
 let intermediate = [null, null];
 let end = null;
@@ -14,11 +14,11 @@ function animation() {
 
     intermediate[1] = setTimeout(() => {
         unanimatedObject.classList.remove('between_state');
-        unanimatedObject.classList.add('animated_object');
+        unanimatedObject.classList.add('end_state');
     }, 2000);
 
     end = setTimeout( () => {
-        unanimatedObject.classList.remove('animated_object');
+        unanimatedObject.classList.remove('end_state');
         clearTimeout(intermediate[0]);
         clearTimeout(intermediate[1]);
     }
